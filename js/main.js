@@ -1,15 +1,7 @@
-const setUpLocalStorage = () => {
-  const retrievedProducts = JSON.parse(localStorage.getItem('shopapp_products'));
-  if(retrievedProducts === null) {
-    localStorage.setItem('shopapp_products', "[]");
-  }
-}
-
-const products = JSON.parse(localStorage.getItem('shopapp_products'));
+const products = JSON.parse(localStorage.getItem(productsListKey));
 const productsListContainer = document.querySelector('.product-list');
 
 function initialise() {
-  setUpLocalStorage();
   renderProducts();
 }
 

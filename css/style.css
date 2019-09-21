@@ -39,3 +39,35 @@
   font-family: helvetica;
   font-size: 17px;
 }
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, select {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  transition: all 300ms ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #000;
+}
+
+select {
+  -webkit-appearance: block;
+}
+
+.button {
+  padding: 15px;
+  background-color: #FF9800;
+  color: black;
+  font-family: helvetica;
+  font-size: 17px;
+}
